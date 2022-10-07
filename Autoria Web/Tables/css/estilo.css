@@ -1,5 +1,5 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial Narrow;
     margin: 0;
     padding: 10px;
 }
@@ -22,18 +22,42 @@ td {
 }
 
 table tr th {
-    background-color: gray;
+    background-color: blue;
     color: white;
 }
 
-tr td:first-child {
+.disciplina {
     font-weight: bold;
 }
 
-table tr:nth-child(even) {
-    background-color: lightgray;
+table col:nth-child(odd) {
+    background-color: lightblue;
+}
+
+table col:nth-child(even) {
+    background-color: rgb(212, 175, 230);
 }
 
 /* table tr th, table tr td {
     border: 1px solid black;
 } */
+
+body h3 {
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+/*table, td, th {
+    border-collapse: collapse; tirar o espaço entre as células
+    border-spacing: 5px; adicionar espaçamento entre as bordas
+    box-shadow: #272727 0px 0px 10px;
+}*/
+
+td:hover {
+    background-color: green !important;
+}
+
+th, td {
+    border: lightblue solid 1px;
+    border-radius: 3px;
+}
